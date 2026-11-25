@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 """
 Creating DataFrames 
@@ -23,11 +24,8 @@ print(my_df_1)
 # csv_path = file_path / "csv_tester.csv"
 # print(file_path)
 
-import os
-
 dir_name = os.path.dirname(os.path.abspath(__file__))
 csv_path = os.path.join(dir_name, "csv_tester.csv")
-
 
 my_data = pd.read_csv(csv_path)
 print(my_data)
