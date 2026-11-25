@@ -31,3 +31,8 @@ csv_path = os.path.join(dir_name, "csv_tester.csv")
 
 my_data = pd.read_csv(csv_path)
 print(my_data)
+
+# Importing excel file
+excel_path = os.path.join(dir_name, "grocery_database.xlsx")
+excel_df = pd.read_excel(excel_path, sheet_name="transactions")
+print(excel_df)
